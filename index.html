@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Document</title>
+    <style>
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .team-member:hover .overlay {
+            opacity: 1;
+        }
+
+        .linkedin-icon {
+            color: #0A66C2;
+            /* Couleur bleue de LinkedIn */
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="header">
+        <img src="images\20240914_110810.png" alt="">
+        <h3 id="entName">UNIVERS MANAGEMENT SOLUTIONS</h3>
+        <h4 id="sousTitre">Cabinet de conseil</h4>
+    </div>
+
+
+
+    <nav>
+        <ul id="menuList">
+            <li><a href="#aPropos">A propos de nous</a></li>
+            <li><a href="#Vision">Vision</a></li>
+            <li><a href="#valeurs">Valeurs</a></li>
+            <li><a href="#mission">Mission</a></li>
+            <li><a href="#formation">Formation</a></li>
+            <li><a href="#toContact">Contact</a></li>
+        </ul>
+
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+    </nav>
+
+
+
+
+    <!---------------carousel------------------>
+    
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images\pexels-fauxels-3184430.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images\pexels-kampus-8353799.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images\pexels-thirdman-5256820.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!------------------------------a propos de nous------------------------->
+
+    <header class="bg-white p-6 shadow-lg">
+
+    </header>
+
+    <!-- About Section -->
+    <section id="aPropos" class="bg-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center">
+            <div class="lg:w-1/2 lg:pr-10">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">À PROPOS DE NOTRE ENTREPRISE</h2>
+                <p class="text-gray-600 mb-6">
+                    UMS (Univers Management Solutions) est un cabinet qui opère dans l’univers des affaires, de la
+                    production et de l’innovation.
+                    Il apporte aux dirigeants d’entreprises des réponses et des solutions sur mesure aux différentes
+                    questions en domaine de la vie de l’entreprise.
+                </p>
+                <p class="text-gray-600 mb-6">
+                    Créé de l’idée de contribution active dans le marché du conseil, UMS se base dans l’accomplissement
+                    de ses missions sur des valeurs fondamentales régissant sa relation envers ses clients.
+                    Par la participation vivement qualifiée des consultants et experts chevronnés dans les domaines du
+                    management, communication, RH, finance et informatique,
+                    UMS offre à ses clients des conseils et solutions de qualité.
+                </p>
+            </div>
+            <div class="lg:w-1/2">
+                <img id="aboutImg" src="https://i.postimg.cc/J0B7HpSH/Untitled-design.png"
+                    alt="Image showing team collaboration at UMS" class="rounded-lg shadow-lg">
+            </div>
+        </div>
+    </section>
+
+      
+
+    <!-- Values Section -->
+    <section id="Vision" class="bg-gray-50 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
+                <!-- Vision -->
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-star text-5xl mb-4"></i>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Vision</h3>
+                    <p class="text-gray-600">Être un leader dans l’innovation et la solution aux entreprises.</p>
+                </div>
+
+                <!-- Missions -->
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-medal text-5xl mb-4"></i>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Missions</h3>
+                    <p class="text-gray-600">Fournir des solutions sur mesure adaptées aux besoins spécifiques des
+                        entreprises.</p>
+                </div>
+
+                <!-- Goals -->
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-bullseye text-5xl mb-4"></i>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Objectifs</h3>
+                    <p class="text-gray-600">Atteindre l'excellence en fournissant des conseils de haute qualité.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--------------------valeurs---------------->
+
+    <div id="valeurs" class="bg-white py-24 sm:py-32">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="mx-auto max-w-2xl lg:text-center">
+            <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Nos valeurs</p>
+            <p class="mt-6 text-lg leading-8 text-gray-600">Nos interventions se basent sur des valeurs fondamentales régissant nos relations avec nos clients</p>
+          </div>
+          
+          <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+            <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+              <div class="relative pl-16">
+                <dt class="text-base font-semibold leading-7 text-gray-900">
+                  <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg">
+                    <i class="fa-regular fa-face-smile"></i>
+                  </div>
+                  La satisfaction client
+                </dt>
+              </div>
+
+
+              <div class="relative pl-16">
+                <dt class="text-base font-semibold leading-7 text-gray-900">
+                  <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg">
+                    <i class="fa-solid fa-brush"></i>
+                  </div>
+                  La réactivité
+                </dt>
+              </div>
+
+
+              <div class="relative pl-16">
+                <dt class="text-base font-semibold leading-7 text-gray-900">
+                  <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg">
+                    <i class="fa-solid fa-business-time"></i>
+                  </div>
+                  Le respect de nos engagements
+                </dt>
+              </div>
+
+
+              <div class="relative pl-16">
+                <dt class="text-base font-semibold leading-7 text-gray-900">
+                  <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg">
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+                  L’intégrité
+                </dt>
+              </div>
+
+              <div class="relative pl-16">
+                <dt class="text-base font-semibold leading-7 text-gray-900">
+                  <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg">
+                    <i class="fa-brands fa-creative-commons-sampling"></i>
+                  </div>
+                  L’écoute
+                </dt>
+              </div>
+
+        
+
+              
+            </dl>
+          </div>
+        </div>
+      </div>
+
+      <!---------------missiom------------------------------>
+      <section id="mission" class="bg-white py-12"></section>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center">
+            <div class="lg:w-1/2 lg:pr-10">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Notre mission</h2>
+                <p class="text-gray-600 mb-6">
+                    Accompagner et assister les organisations publiques et privées dans la mise en oeuvre de solutions 
+                    adaptées en management transversal, Gestion des Ressources Humaines, recrutement, formation et gestion de l'Intérim.
+                </p>
+                <p class="text-gray-600 mb-6">
+                    Notre expérience et notre expertise nous permet de conseiller et d'accompagner les dirigeants dans l'élaboration de Stratégie
+                    de gestion des différentes activités.
+                </p>
+                <p class="text-gray-600 mb-6"></p>
+                    De mener à bien leurs projets de transformation, en mettant à leurs dispositions les outils nécessaires
+                    d'adaptation et de conduite du changement. De concevoir les processus de changements organisationnels
+                    et managériaux (Humaines, technologiques, financiers, informatiques, démarche qualité, sécurité, ...)
+                    selon les finalités attendues.
+                </p>
+            </div>
+            <div class="lg:w-1/2">
+                <img id="aboutImg" src="images\business-marketing-communication-ciliabule.webp"
+                    alt="Image showing team collaboration at UMS" class="rounded-lg shadow-lg">
+            </div>
+        </div>
+    </section>
+
+
+    <!--------------------team-------------------------->
+    <section class="bg-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <h2 class="text-4xl font-bold text-gray-800">NOTRE ÉQUIPE</h2>
+                <p class="text-gray-600 mt-4">Découvrez notre équipe dédiée de développeurs en informatique et de
+                    dirigeants, prêts à vous fournir des solutions innovantes.</p>
+            </div>
+
+            <!-- Grille des membres de l'équipe -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+                <!-- Membre de l'équipe 1 : Abdessamad EL MOUBTAHIL -->
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center static team-member">
+                    <div class="relative">
+                        <img src="https://placehold.co/300x300" alt="Photo de Abdessamad EL MOUBTAHIL"
+                            class="w-48 h-48 mx-auto rounded-full mb-4">
+                        <div class="overlay">
+                            <a href="https://www.linkedin.com/in/abdessamad-el-moubtahil" target="_blank"
+                                class="text-white text-5xl linkedin-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mt-4">Abdessamad EL MOUBTAHIL</h3>
+                    <p class="text-gray-600">Développeur Informatique</p>
+                </div>
+
+                <!-- Membre de l'équipe 2 : Faouzi Haourigui -->
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center static team-member">
+                    <div class="relative">
+                        <img src="https://placehold.co/300x300" alt="Photo de Faouzi Haourigui"
+                            class="w-48 h-48 mx-auto rounded-full mb-4">
+                        <div class="overlay">
+                            <a href="https://www.linkedin.com/in/faouzi-haourigui" target="_blank"
+                                class="text-white text-5xl linkedin-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mt-4">Faouzi Haourigui</h3>
+                    <p class="text-gray-600">Développeur Informatique</p>
+                </div>
+
+                <!-- Membre de l'équipe 3 : Abdellah (CEO) -->
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center static team-member">
+                    <div class="relative">
+                        <img src="https://placehold.co/300x300" alt="Photo de Abdellah"
+                            class="w-48 h-48 mx-auto rounded-full mb-4">
+                        <div class="overlay">
+                            <a href="https://www.linkedin.com/in/abdellah" target="_blank"
+                                class="text-white text-5xl linkedin-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mt-4">Abdellah</h3>
+                    <p class="text-gray-600">CEO</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-----------------------card----------------------->
+
+    <div class="text-center mb-10">
+        <h2 class="text-4xl font-bold text-gray-800">NOTRE FORMATION</h2>
+        <p class="text-gray-600 mt-4">Après identification de vos besoins en formation, UMS vous offre une panoplie de modules sur mesure, vous permettant de développer vos attitudes managériales et d’améliorer le niveau de compétences de vos équipes.</p>
+    </div>
+
+    <div id="formation">
+
+
+        <div class="card" style="width: 18rem; position: static;">
+            <img src="images\pexels-fauxels-3184430.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Gestion des Ressources Humaines</p>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem; position: static;">
+            <img src="images\pexels-kampus-8353799.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Management</p>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem; position: static;">
+            <img src="images\business-marketing-communication-ciliabule.webp" class="card-img-top"
+                alt="...">
+            <div class="card-body">
+                <p class="card-text">Marketing et Communication</p>
+            </div>
+        </div>
+
+
+        <div class="card" style="width: 18rem; position: static;">
+            <img src="images\Developpement-personnel.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Développement Personnel</p>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem; position: static;">
+            <img src="images\commerce-vente-sponsor-14-30.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Commerce et vente</p>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem; position: static;">
+            <img src="images\_x_le-management-operationnel.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Management Stratégique, Intermédiaire et opérationnel</p>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem; position: static;">
+            <img src="images\61028f7e90ece0936fc42bd2_qu_est_ce qu_une GED_.png" class="card-img-top"
+                alt="...">
+            <div class="card-body">
+                <p class="card-text">Gestion des documents</p>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem; position: static;">
+            <img src="images\Versionning.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Gestion de système informatique</p>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem; position: static;">
+            <img src="images\Controles-et-verifications-reglementaires-en-entreprise.jpg"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Qualité Environnement et sécurité</p>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem; position: static;">
+            <img src="images\quelle-difference-logistique-supply-chain-2.jpg" class="card-img-top"
+                alt="...">
+            <div class="card-body">
+                <p class="card-text">Logistique et Supplychain</p>
+            </div>
+        </div>
+
+
+
+    </div>
+    <!--------------------contact----------------------->
+    
+    <section id="contact" class="bg-transparent py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center">
+            <!-- Image Side -->
+            <div class="w-full lg:w-1/2 mb-8 lg:mb-0">
+                <img src="https://i.postimg.cc/Y91cgTbF/Untitled-design-1.png" alt="Contact Image"
+                    class="rounded-lg shadow-lg w-full">
+            </div>
+
+            <!-- Form Side -->
+            <div id="toContact" class="w-full lg:w-1/2 lg:pl-8">
+                <h2 class="text-4xl font-bold text-gray-800 mb-6">Obtenir un devis</h2>
+                <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
+                    <input type="hidden" name="access_key" value="e776f29e-f8f8-4e1c-8a92-ee4e2ded07ca">
+                    <!-- Name -->
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700">Nom *</label>
+                        <input type="text" id="name" name="name" required
+                            class="mt-1 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                    </div>
+
+                    <!-- Phone Number -->
+                    <div>
+                        <label for="phone" class="block text-sm font-medium text-gray-700">Numéro de téléphone *</label>
+                        <input type="text" id="phone" name="phone" required pattern="\d*" maxlength="15"
+                            title="Veuillez entrer un numéro de téléphone valide"
+                            class="mt-1 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                    </div>
+
+                    <!-- Email -->
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700">Email *</label>
+                        <input type="email" id="email" name="email" required
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Veuillez entrer un email valide."
+                            class="mt-1 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                    </div>
+
+                    <!-- Service Dropdown -->
+                    <div>
+                        <label for="service" class="block text-sm font-medium text-gray-700">Service que vous recherchez
+                            *</label>
+                        <select id="service" name="service" required
+                            class="mt-1 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                            <option value="" disabled selected>Choisissez un service</option>
+                            <option value="formation">Ingénierie et Plan de Formation</option>
+                            <option value="accompagnement">L'Accompagnement</option>
+                            <option value="recrutement">Le recrutement</option>
+                            <option value="formation">La Formation</option>
+                            <option value="team-building">Team Building</option>
+                            <option value="gestion-externalisee">Gestion externalisée du personnel (INTERIM)</option>
+                        </select>
+                    </div>
+
+                    <!-- Message -->
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                        <textarea id="message" name="message" rows="4" maxlength="500"
+                            placeholder="Limité à 500 caractères"
+                            class="mt-1 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"></textarea>
+                        <p id="charCount" class="text-sm text-gray-500">0/500 caractères</p>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div>
+                        <button id="btn" type="submit"
+                            class="w-full text-white py-3 rounded-md shadow-lg hover:bg-blue-700 focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                            onclick="sendMail()">Obtenir
+                            un devis</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Footer -->
+    <footer id="footer" class="text-center bg-body-tertiary">
+        <!-- Grid container -->
+        <div class="container pt-4">
+          <!-- Section: Social media -->
+          <!---<section class="mb-4">
+            Facebook 
+            <a
+              data-mdb-ripple-init
+              class="btn btn-link btn-floating btn-lg text-body m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+      
+             Twitter 
+            <a
+              data-mdb-ripple-init
+              class="btn btn-link btn-floating btn-lg text-body m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fab fa-twitter"></i
+            ></a>
+      
+             Google 
+            <a
+              data-mdb-ripple-init
+              class="btn btn-link btn-floating btn-lg text-body m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fab fa-google"></i
+            ></a>
+      
+             Instagram 
+            <a
+              data-mdb-ripple-init
+              class="btn btn-link btn-floating btn-lg text-body m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fab fa-instagram"></i
+            ></a>
+      
+             Linkedin 
+            <a
+              data-mdb-ripple-init
+              class="btn btn-link btn-floating btn-lg text-body m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+             Github 
+            
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div id="footerText" class="text-center p-3">
+          © 2024 Copyright
+        </div>
+        <!-- Copyright -->
+      </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

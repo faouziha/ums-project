@@ -1,0 +1,527 @@
+
+
+
+#header{
+    display: flex;
+    padding-left: 5%;
+}
+
+img{
+    width: 7%;
+}
+
+#entName{
+    width: 18.5%;
+    padding-top: 1%;
+    margin-left: 29%;
+    margin-bottom: 50px;
+    color: rgb(0, 0, 98);
+    border-bottom: black 1px solid;
+    font-family: Oleo system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+#sousTitre{
+    position: absolute;
+    top: 5%;
+    left: 42%;
+    font-size: 1.5em;
+    color: rgb(90, 90, 90);
+    font-family: Oleo system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+#anchor{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 18px;
+    font-family: Oleo system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+.carousel-item img{
+    height: 600px;
+
+}
+
+#carouselExampleIndicators{
+    width: 100%;
+    position: relative;
+}
+
+#aboutImg{
+    width: 600px;
+}
+
+/********navbar***********/
+
+#navbar{
+    display: inline-flex;
+    margin-left: 10%;
+    margin-bottom: 5px;
+    border: black 1px solid;
+    width: 80%;
+    height: 70px;
+    border-radius: 10px;
+    background-color: rgb(16, 16, 113);
+}
+
+#navbar li{
+    margin-left: 4.9%;
+    margin-right: 4.9%;
+    margin-top: 20px;
+    font-size: larger;
+    color: #fff;
+    font-family: Oleo system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#navbar a:hover{
+    color: gray;
+}
+
+#container{
+    position: sticky;
+    top: 0px;
+}
+
+
+
+
+
+
+
+/*****************navbar****************************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+nav{
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #004274;
+    position: relative;
+    height: 70px;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+nav ul{
+    display: flex;
+    gap: 30px;
+    margin-left: 30%;
+}
+
+nav ul li{
+    list-style-type: none;
+    margin-top: -9px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a:hover{
+    filter: drop-shadow(10px 0px 10px #fff);
+}
+
+.menu-icon{
+    display: none;
+}
+
+.menu-icon i{
+    color: #fff;
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+/**************************cards**********************/
+
+.card{
+    width:370px;
+    height:150px;
+    float:left;
+    background-color:purple;
+    margin-left: 12px;
+    margin-bottom: 10px;
+    position: static;
+}
+
+.card img{
+    width: 18rem;
+    height: 200px;
+    position: static;
+}
+
+
+
+
+
+/*****************contact****************/
+
+#contact img{
+    margin-left: -20%;
+}
+
+.w-full{
+    margin-left: -5%;
+    margin-top: 10%;
+}
+
+
+
+
+
+.absolute i{
+    color: #fff;
+}
+
+.absolute{
+    background-color: #004274;
+}
+
+#btn{
+    background-color: #004274;
+    margin-bottom: 10%;
+}
+
+#btn:hover{
+    background-color: #004d88;
+}
+
+.fas{
+    color: #004274;
+}
+
+/*****************responsive*************************/
+
+/************************phone*************************/
+@media(min-width:100px) and (max-width:700px) {
+    #header img{
+        width: 40px;
+        height: 40px;
+        margin-top: 5%;
+    }
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background-color: #004274;
+        gap: 0;
+        overflow: hidden;
+    }
+
+    nav ul li{
+        padding: 10px;
+    }
+
+
+    #entName{
+        position: relative;
+        left: -15%;
+        width: 58%;
+        text-align: center;
+        margin-top: 5%;
+        font-size: 12px;
+    }
+
+    #sousTitre{
+        position: absolute;
+        top: 5%;
+        left: 35%;
+        font-size: 20px;
+        text-align: center;
+    }
+    .menu-icon{
+        display: block;
+        margin-left: 90%;
+    }
+
+    #menuList{
+        transition: all 0.3s;
+    }
+
+    .card{
+        position: relative;
+        left: 100px;
+    }
+
+    #contact{
+        position: relative;
+        top: 5px;
+        left: 18%;
+        width: 80%;
+        height: 200px;
+    }
+
+    #contact img{
+        position: absolute;
+        top: 2700px;
+        left: 35px;
+        width: 300px;
+    }
+
+    #formation{
+        margin-left: 10%;
+    }
+
+    #btn{
+        margin-bottom: 15%;
+    }
+
+    #footer{
+        position: relative;
+        top: 1200px;
+        left: 83px;
+        width: 100%;
+        margin: -100px;
+    }
+
+    #toContact{
+        position: absolute;
+        top: 3000px;
+        left: 30px;
+        width: 80%;
+    }
+
+    #footerText{
+        background-color: #004274;
+        height: 50px;
+        margin-left: 8%;
+        margin-top: 670%;
+        color: #fff;
+    }
+}
+
+
+/**************ipad*********************/
+@media (min-width:1000px) and (max-width:1200px){
+
+   
+    
+    #entName{
+        margin-left: 25%;
+        width: 26%;
+        margin-top: 0%;
+        text-align: center;
+    }
+
+    #sousTitre{
+        position: absolute;
+        top: 4%;
+        left: 42.5%;
+    }
+
+    #menuList{
+        margin-left: 25%;
+    }
+
+    #formation{
+        margin-left: 12%;
+    }
+    img{
+        width: 10%;
+    }
+    #contact{
+        position: relative;
+        top: -50px;
+        left: 20%;
+        width: 800px;
+        height: 300px;
+        margin-top: 1200px;
+    }
+
+    #contact img{
+        position: relative;
+        left: 20px;
+    }
+
+    #footer{
+        position: relative;
+        top: 500px;
+    }
+}
+
+
+/**************ipad*********************/
+@media (min-width:700px) and (max-width:800px){
+
+   
+    #navbar{
+        display: none;
+    }
+    #entName{
+        margin-left: 20%;
+        width: 40%;
+        margin-top: 3.5%;
+        text-align: center;
+    }
+
+    #sousTitre{
+        position: absolute;
+        top: 5%;
+        left: 40%;
+    }
+
+    #menuList{
+        margin-left: 12%;
+    }
+
+    #formation{
+        margin-left: 12%;
+    }
+    img{
+        width: 10%;
+    }
+    #contact{
+        position: relative;
+        top: -50px;
+        left: 20%;
+        width: 600px;
+        height: 300px;
+        margin-top: 1450px;
+    }
+
+    #contact img{
+        position: relative;
+        left: 70px;
+    }
+
+    #footer{
+        position: relative;
+        top: 1100px;
+    }
+}
+
+
+
+
+
+
+@media (min-width:800px) and (max-width:1000px){
+
+   
+    #navbar{
+        display: none;
+    }
+    #entName{
+        margin-left: 20%;
+        width: 36%;
+        margin-top: 0%;
+        text-align: center;
+    }
+
+    #sousTitre{
+        position: absolute;
+        top: 2.5%;
+        left: 40%;
+    }
+
+    #menuList{
+        margin-left: 12%;
+    }
+
+    #formation{
+        margin-left: 12%;
+    }
+    img{
+        width: 10%;
+    }
+    #contact{
+        position: relative;
+        top: -50px;
+        left: 20%;
+        width: 600px;
+        height: 300px;
+        margin-top: 1450px;
+    }
+
+    #contact img{
+        position: relative;
+        left: 70px;
+    }
+
+    #footer{
+        position: relative;
+        top: 1100px;
+    }
+}
+
+
+
+
+/****************************tablet***************************/
+
+
+@media (min-width:1200px) and (max-width:1500px){
+    #contact{
+        width: 800px;
+        position: relative;
+        top: 2100px;
+        left: 200px;
+        margin-top: -1000px;
+    }
+
+    #footer{
+        position: relative;
+        top: 2200px;
+        left: 0px;
+        width: 108.5%;
+        margin: -100px;
+    }
+
+    #footerText{
+        margin-left: 100px
+    }
+
+    .mb-4{
+        margin-left: 10%;
+    }
+
+    #entName{
+        margin-left: 27%;
+        width: 26%;
+        margin-top: 0%;
+        font-size: larger;
+        
+    }
+
+    #sousTitre{
+        position: absolute;
+        top: 5.5%;
+        left: 42%;
+    }
+
+    #menuList{
+        margin-left: 25%;
+    }
+
+    #formation{
+        margin-left: 12%;
+    }
+
+    #contact{
+        margin-left: 8%;
+    }
+
+}
