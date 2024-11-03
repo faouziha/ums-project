@@ -4,8 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom CSS to create a more realistic sticker effect */
+        .sticker {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            padding: 12px 24px;
+            background-color: white;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15), 0 4px 6px rgba(0, 0, 0, 0.1);
+            border: 2px solid rgba(0, 0, 0, 0.1); /* Subtle border for sticker edge */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .sticker:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2), 0 6px 8px rgba(0, 0, 0, 0.1);
+        }
+        .sticker:before {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            right: -8px;
+            width: 30px;
+            height: 30px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-top-left-radius: 50%;
+            box-shadow: -6px -6px 12px rgba(0, 0, 0, 0.15); /* Shadow for lifted effect */
+            transform: rotate(45deg);
+            z-index: 10;
+        }
+    </style>
 </head>
-<body>
+<body class="bg-gray-100 text-dark-blue font-sans">
+
+    <div class="flex flex-col items-center justify-center min-h-screen p-6">
+        <div class="w-full max-w-3xl text-left mb-6">
+            <h2 class="text-2xl font-bold text-blue-900">La Formation :</h2>
+            <p class="text-md text-gray-800 leading-relaxed mt-2">
+                Après identification de vos besoins en formation, UMS vous offre une panoplie de modules sur mesure, 
+                vous permettant de développer vos attitudes managériales et d’améliorer le niveau de compétences de vos équipes :
+            </p>
+        </div>
+
+        <div class="grid grid-cols-2 gap-6 w-full max-w-3xl">
+            <!-- Column 1 -->
+            <div class="space-y-4">
+                <div class="sticker bg-gradient-to-r from-green-600 to-green-500 text-white font-semibold text-lg rounded shadow-lg">
+                    Commerce et vente
+                </div>
+                <div class="sticker bg-gradient-to-r from-blue-600 to-blue-500 text-white font-semibold text-lg rounded shadow-lg">
+                    Développement Personnel
+                </div>
+                <div class="sticker bg-gradient-to-r from-purple-600 to-purple-500 text-white font-semibold text-lg rounded shadow-lg">
+                    Marketing et Communication
+                </div>
+                <div class="sticker bg-gradient-to-r from-yellow-600 to-yellow-500 text-white font-semibold text-lg rounded shadow-lg">
+                    Management
+                </div>
+                <div class="sticker bg-gradient-to-r from-red-600 to-red-500 text-white font-semibold text-lg rounded shadow-lg">
+                    Gestion des Ressources Humaines
+                </div>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="space-y-4">
+                <div class="sticker bg-gradient-to-r from-pink-600 to-pink-500 text-white font-semibold text-lg rounded shadow-lg">
+                    Logistique et SupplyChain
+                </div>
+                <div class="sticker bg-gradient-to-r from-green-600 to-green-500 text-white font-semibold text-lg rounded shadow-lg">
+                    Qualité, Environnement et sécurité
+                </div>
+                <div class="sticker bg-gradient-to-r from-blue-600 to-blue-500 text-white font-semibold text-lg rounded shadow-lg">
+                    Gestion de système informatique
+                </div>
+                <div class="sticker bg-gradient-to-r from-green-600 to-green-500 text-white font-semibold text-lg rounded shadow-lg">
+                    Gestion des documents
+                </div>
+                <div class="sticker bg-gradient-to-r from-red-600 to-red-500 text-white font-semibold text-lg rounded shadow-lg">
+                    Management Stratégique, Intermédiaire et opérationnel
+                </div>
+            </div>
+        </div>
+    </div>
     
 </body>
 </html>
