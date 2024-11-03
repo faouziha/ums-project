@@ -38,10 +38,32 @@ document.querySelectorAll('.team-member img').forEach((img) => {
 
 
 
+  document.querySelectorAll('.service-card').forEach(card => {
+    card.addEventListener('mouseenter', () => {
+      card.classList.add('bg-blue-50', 'scale-105', 'transition-transform', 'duration-300');
+    });
+    card.addEventListener('mouseleave', () => {
+      card.classList.remove('bg-blue-50', 'scale-105');
+    });
+  });
 
 
 
+  document.addEventListener("DOMContentLoaded", function() {
+    const timelineItems = document.querySelectorAll(".timeline-item");
 
+    const revealOnScroll = () => {
+      timelineItems.forEach(item => {
+        const rect = item.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          item.classList.add("visible");
+        }
+      });
+    };
+
+    window.addEventListener("scroll", revealOnScroll);
+    revealOnScroll(); // Initial check
+  });
 
 
 
